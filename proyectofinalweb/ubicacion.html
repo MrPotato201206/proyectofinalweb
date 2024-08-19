@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación del Restaurante</title>
+    <!-- Enlaza el archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS Directamente aquí para prueba */
+        body {
+            font-family: Arial, sans-serif; /* Define la fuente para toda la página */
+            background-color: #f4f4f4; /* Fondo gris claro para toda la página */
+            margin: 0; /* Elimina el margen por defecto */
+            padding: 0; /* Elimina el relleno por defecto */
+        }
+        
+        .container {
+            max-width: 1200px; /* Define el ancho máximo del contenedor */
+            margin: auto; /* Centra el contenedor horizontalmente */
+            padding: 20px; /* Añade relleno alrededor del contenido */
+        }
+        
+        h1 {
+            text-align: center; /* Centra el texto del encabezado */
+            color: #fff; /* Color del texto del título */
+            background-color: #4CAF50; /* Color sólido de fondo para el encabezado */
+            padding: 15px; /* Relleno alrededor del texto del encabezado */
+            border-radius: 8px; /* Bordes redondeados para el encabezado */
+            margin-bottom: 20px; /* Espacio debajo del encabezado */
+        }
+        
+        .map-container {
+            position: relative; /* Posicionamiento relativo para el contenedor del mapa */
+            width: 100%; /* Ancho completo del contenedor */
+            height: 500px; /* Altura del contenedor del mapa */
+            margin-top: 20px; /* Espacio encima del contenedor */
+            margin-bottom: 20px; /* Espacio debajo del contenedor */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            border-radius: 8px; /* Bordes redondeados para el contenedor del mapa */
+            overflow: hidden; /* Oculta cualquier desbordamiento del contenido */
+            background-color: rgba(0, 0, 0, 0.05); /* Fondo gris opaco para el contenedor del mapa */
+        }
+        
+        iframe {
+            width: 100%; /* Ancho completo del iframe */
+            height: 100%; /* Altura completa del iframe */
+            border: none; /* Elimina el borde del iframe */
+            border-radius: 8px; /* Bordes redondeados para el iframe */
+        }
+        
+        .button-container {
+            text-align: center; /* Centra el texto de los botones */
+            margin-top: 20px; /* Espacio encima del contenedor de botones */
+        }
+        
+        .btn {
+            background-color: #4CAF50; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            border: none; /* Elimina el borde del botón */
+            padding: 10px 20px; /* Relleno dentro del botón */
+            text-align: center; /* Centra el texto dentro del botón */
+            text-decoration: none; /* Elimina la subrayado en el texto del botón */
+            display: inline-block; /* Permite definir el ancho y el alto del botón */
+            font-size: 16px; /* Tamaño de la fuente del texto del botón */
+            margin: 4px 2px; /* Espacio alrededor del botón */
+            cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el botón */
+            border-radius: 8px; /* Bordes redondeados para el botón */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+            transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para el cambio de color y sombra */
+        }
+        
+        .btn:hover {
+            background-color: #45a049; /* Color de fondo del botón al pasar el ratón */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado de la página -->
+        <h1>Ubicación del Restaurante</h1>
+        
+        <!-- Contenedor para el mapa -->
+        <div class="map-container">
+            <!-- iframe para mostrar el mapa de Google Maps -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3863.319929734531!2d-90.49013082645901!3d14.466309486004315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589af81f9765aad%3A0xb939064403f61a83!2sRestaurante%20El%20Rinc%C3%B3n%20De%20La%20Finca!5e0!3m2!1ses!2sgt!4v1724007258296!5m2!1ses!2sgt" 
+                allowfullscreen="" 
+                loading="lazy" 
+                aria-label="Ubicación del Restaurante"></iframe>
+        </div>
+        
+        <!-- Contenedor para los botones -->
+        <div class="button-container">
+            <!-- Botón para regresar al menú -->
+            <a href="menu.php" class="btn">Regresar al Menú</a>
+        </div>
+    </div>
+</body>
+</html>

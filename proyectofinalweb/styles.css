@@ -1,0 +1,188 @@
+/* General */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente del texto */
+    background-color: #1e1e1e; /* Fondo oscuro para un estilo futurista */
+    color: #e0e0e0; /* Texto claro para un buen contraste con el fondo oscuro */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    padding: 0; /* Elimina el relleno predeterminado del navegador */
+}
+
+.container {
+    width: 80%; /* Ancho del contenedor al 80% del ancho de la ventana */
+    max-width: 1200px; /* Ancho máximo del contenedor a 1200px */
+    margin: 50px auto; /* Centra el contenedor horizontalmente y agrega 50px de margen superior e inferior */
+    padding: 20px; /* Espacio interior de 20px alrededor del contenido */
+    background: #2c2c2c; /* Fondo ligeramente más claro para el contenedor */
+    border-radius: 8px; /* Redondea las esquinas del contenedor */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Agrega una sombra más pronunciada alrededor del contenedor */
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #00bcd4; /* Color llamativo para los encabezados */
+}
+
+/* Formularios */
+form {
+    margin-bottom: 20px; /* Agrega espacio debajo del formulario */
+}
+
+form label {
+    display: block; /* Muestra las etiquetas como bloques para que ocupen toda la línea */
+    margin: 10px 0 5px; /* Agrega espacio alrededor de las etiquetas */
+    font-size: 1.2em; /* Tamaño de fuente más grande para las etiquetas */
+}
+
+form input, form button {
+    width: 100%; /* Establece el ancho de los campos de entrada y botones al 100% del contenedor */
+    padding: 10px; /* Espacio interior en los campos de entrada y botones */
+    margin: 5px 0; /* Espacio arriba y abajo de los campos de entrada y botones */
+    border: none; /* Elimina el borde predeterminado de los campos de entrada y botones */
+    border-radius: 4px; /* Redondea las esquinas de los campos de entrada y botones */
+}
+
+form input {
+    background-color: #333; /* Fondo oscuro para los campos de entrada */
+    color: #e0e0e0; /* Texto claro dentro de los campos de entrada */
+}
+
+form button {
+    background-color: #00bcd4; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    font-size: 1.2em; /* Tamaño de fuente más grande para el texto del botón */
+}
+
+form button:hover {
+    background-color: #008c95; /* Cambia el color de fondo del botón al pasar el mouse sobre él */
+}
+
+/* Tablas */
+table {
+    width: 100%; /* Ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Elimina el espacio entre los bordes de las celdas */
+    margin-top: 20px; /* Agrega espacio encima de la tabla */
+}
+
+table, th, td {
+    border: 1px solid #444; /* Bordes oscuros para la tabla y las celdas */
+}
+
+th {
+    background-color: #00bcd4; /* Fondo del encabezado de la tabla */
+    color: #fff; /* Color del texto en el encabezado de la tabla */
+}
+
+td {
+    padding: 10px; /* Espacio interior en las celdas de la tabla */
+    text-align: center; /* Centra el texto en las celdas de la tabla */
+}
+
+/* Menú */
+.menu-item {
+    display: flex; /* Utiliza flexbox para alinear los elementos hijos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    border-bottom: 1px solid #444; /* Borde inferior oscuro para separar los elementos del menú */
+    padding: 10px 0; /* Espacio interior arriba y abajo en los elementos del menú */
+}
+
+.menu-item img {
+    max-width: 150px; /* Ancho máximo de la imagen del menú */
+    border-radius: 8px; /* Redondea las esquinas de la imagen */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+.menu-item div {
+    max-width: calc(100% - 200px); /* Ajusta el ancho del contenedor del texto para dejar espacio para la imagen */
+}
+
+.menu-item h3 {
+    color: #00bcd4; /* Color llamativo para el título del elemento del menú */
+    font-size: 1.5em; /* Tamaño de fuente grande para el título */
+    margin: 0; /* Elimina el margen alrededor del título */
+}
+
+.menu-item p {
+    margin: 5px 0; /* Agrega espacio arriba y abajo del texto de descripción */
+}
+
+/* Enlaces */
+a {
+    color: #00bcd4; /* Color llamativo para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el mouse sobre ellos */
+}
+
+/* Estilo adicional para el cuerpo, encabezados, contenedores y formularios */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente del texto */
+    background-color: #121212; /* Fondo más oscuro para un estilo más futurista */
+    color: #E0E0E0; /* Texto claro para contraste */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 20px; /* Agrega espacio interior en el cuerpo */
+    text-align: center; /* Centra el texto en el cuerpo */
+}
+
+h1, h2 {
+    color: #FF4081; /* Color llamativo para los encabezados */
+}
+
+.container {
+    max-width: 600px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+form {
+    background-color: #1E1E1E; /* Fondo oscuro para los formularios */
+    padding: 20px; /* Espacio interior en los formularios */
+    border-radius: 8px; /* Redondea las esquinas de los formularios */
+    margin-bottom: 20px; /* Agrega espacio debajo de los formularios */
+}
+
+label {
+    display: block; /* Muestra las etiquetas como bloques */
+    margin: 10px 0 5px; /* Agrega espacio alrededor de las etiquetas */
+}
+
+input, button {
+    width: 100%; /* Establece el ancho al 100% del contenedor */
+    padding: 10px; /* Espacio interior en los campos de entrada y botones */
+    margin-bottom: 15px; /* Agrega espacio debajo de los campos de entrada y botones */
+    border-radius: 4px; /* Redondea las esquinas */
+    border: none; /* Elimina los bordes predeterminados */
+}
+
+button {
+    background-color: #FF4081; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+}
+
+button:hover {
+    background-color: #000000; /* Cambia el color de fondo del botón al pasar el mouse sobre él */
+}
+
+/* Enlaces estilizados */
+a {
+    display: inline-block; /* Muestra los enlaces como bloques en línea */
+    margin: 10px 5px; /* Espacio alrededor de los enlaces */
+    padding: 10px 20px; /* Espacio interior en los enlaces */
+    color: white; /* Color del texto de los enlaces */
+    background-color: #03A9F4; /* Color de fondo de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    border-radius: 4px; /* Redondea las esquinas de los enlaces */
+}
+
+a:hover {
+    background-color: #0288D1; /* Cambia el color de fondo de los enlaces al pasar el mouse sobre ellos */
+}
+
+/* Contenedor de imágenes */
+.image-container img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    border-radius: 8px; /* Redondea las esquinas de las imágenes */
+    margin-bottom: 15px; /* Agrega espacio debajo de las imágenes */
+}
